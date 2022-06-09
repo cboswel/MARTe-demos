@@ -1,0 +1,8 @@
+edit marte_mds/new
+add node mdstest/usage=signal
+add node DESC/usage=text
+
+
+write
+close
+exit
