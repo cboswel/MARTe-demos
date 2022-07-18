@@ -17,7 +17,4 @@ make -f Makefile.linux
 cd $MARTe2_components_DIR
 make -f Makefile.linux
 
-Build/x86-linux/GTest/MainGTest.ex
-
-
 # MARTe install seems fine but MDSplus components arent getting installed because MDSplus install is botched. Dont forget to ./bootstrap then configure. Can generate buildroot with ../mdsplus/deploy/build.sh --os=ubuntu20 --release but I don't know how to install from there. 
