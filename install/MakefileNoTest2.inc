@@ -26,8 +26,8 @@
 #Subprojects w.r.t. the main directory only (important to allow setting SPBM as an export variable - inside this Makefile, i.e. it cannot be in MakeDefaults).
 #If SPB is directly exported as an environment variable it will also be evaluated as part of the subprojects SPB, thus potentially overriding its value.
 #Main target and test subprojects.
-SPBM?=Source/Core.x Source/App.x
-SPBMT?=Test/Core/BareMetal.x Test/Core/Scheduler.x Test/Core/FileSystem.x Test.x Docs/User/source/_static/examples/Core.x
+SPBM?=
+SPBMT?=
 #This really has to be defined locally.
 SUBPROJMAIN=$(SPBM:%.x=%.spb)
 SUBPROJMAINTEST=$(SPBMT:%.x=%.spb)
