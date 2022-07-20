@@ -16,7 +16,7 @@ export MARTe2_components_DIR=$BASEDIR/MARTe2-components
 cd $MARTe2_DIR
 make -f Makefile.linux
 
-#cp ../install/MakefileNoTest.inc $MARTe2_components_DIR/Makefile.inc
+cp ../install/MakefileNoTest.inc $MARTe2_components_DIR/Makefile.inc
 
 cd $MARTe2_components_DIR
 make -f Makefile.linux
