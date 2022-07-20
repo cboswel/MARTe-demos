@@ -11,12 +11,12 @@ export MARTe2_DIR=$BASEDIR/MARTe2-dev
 export LD_LIBRARY_PATH=$MARTe2_DIR/Build/x86-linux/Core
 export MARTe2_components_DIR=$BASEDIR/MARTe2-components
 
-cp install/MakefileNoTest2.inc $MARTe2_DIR/Makefile.inc
+#cp install/MakefileNoTest2.inc $MARTe2_DIR/Makefile.inc
 
 cd $MARTe2_DIR
 make -f Makefile.linux
 
-cp ../install/MakefileNoTest.inc $MARTe2_components_DIR/Makefile.inc
+#cp ../install/MakefileNoTest.inc $MARTe2_components_DIR/Makefile.inc
 
 cd $MARTe2_components_DIR
 make -f Makefile.linux
