@@ -14,9 +14,10 @@ apt-get install -y autogen
 apt-get install -y libpcap-dev
 git clone https://github.com/appneta/tcpreplay.git
 cd /tcpreplay
-./autogen
-./configure --disable-local-libopts
-make
-make install
-cd /
-git clone https://github.com/cboswel/MARTe-demos.git
+pwd
+#./autogen
+#./configure --disable-local-libopts
+#make
+#make install
+#cd /
+#git clone https://github.com/cboswel/MARTe-demos.git
