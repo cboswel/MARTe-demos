@@ -14,7 +14,7 @@ apt-get install -y autogen
 apt-get install -y libpcap-dev
 git clone https://github.com/appneta/tcpreplay.git
 cd /tcpreplay
-./autogen
+./autogen.sh
 ./configure --disable-local-libopts
 make
 make install
