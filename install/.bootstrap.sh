@@ -7,16 +7,5 @@ apt-get install -y tmux
 apt-get install -y make
 apt-get install -y cmake
 apt-get install -y git
-apt-get install -y autotools-dev
-apt-get install -y libtool
-apt-get install -y automake
-apt-get install -y autogen
-apt-get install -y libpcap-dev
-git clone https://github.com/appneta/tcpreplay.git
-cd /tcpreplay
-./autogen.sh
-./configure --disable-local-libopts
-make
-make install
-cd /
+apt-get install -y python3
 git clone https://github.com/cboswel/MARTe-demos.git

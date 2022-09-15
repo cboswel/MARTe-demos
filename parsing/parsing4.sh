@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export marte_mds_path=Trees/
-./packetSender.sh &>/dev/null &
+python3 UDPGenerator.py &>/dev/null &
 ./Main.sh -l RealTimeLoader -f 4-Types.cfg -s Run
-pkill "UDPGenerator.py"
+pkill "python3"
 
