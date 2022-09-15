@@ -6,7 +6,7 @@ from struct import pack
 
 def send(ip, port, sock, values):
     print(values[0]) 
-    args = ["<Q11B729H"] # A longlong timestamp, 11 Bytes, the rest are 16bit shorts
+    args = ["<Q11B12H"] # A longlong timestamp, 11 Bytes, the rest are 16bit shorts
     args.append(values[0])
     for i in values[1]:   # append the Bytes
         args.append(i)
@@ -20,6 +20,7 @@ def send(ip, port, sock, values):
 def main(message=0):
 
     port = 5432     #arbitrary port
+#    ip = "172.17.0.1"
     ip = "127.0.0.1"
     freq = 1
     period = (1 / freq)
@@ -33,7 +34,7 @@ def main(message=0):
     while True:
         timestamp = 123456
         Bytes = [10, 11, 12, 13, 14, 15, 35, 34, 33, 32, 31]
-        shorts = range(0, 727)
+        shorts = range(100, 110)
         val1, val2 = (1111, 2222)
         payload = [timestamp, Bytes, val1, val2, shorts]
         send(ip, port, sock, payload)
