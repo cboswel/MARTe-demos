@@ -1,0 +1,8 @@
+edit marte_mds/new
+add node MDStest/usage=signal
+set def \marte_mds::TOP.mdstest
+add node sample/usage=numeric
+
+write
+close
+exit
